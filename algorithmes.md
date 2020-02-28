@@ -36,11 +36,11 @@ Pour permettre l'exécution d'un algorithme, il faut disposer d'un système d'ex
 -   Le pianola, instrument de musique capable de reproduire une partition écrite sur deux rouleaux de papier perforés ;
 -   Un joueur de Rubik's Cube peut lire des séries d'instructions représentant des mouvements, par exemple : FRUR'U'F' ;
 -   Un microprocesseur exploite des instructions au format binaire qui correspondent à des opérations élémentaires (logiques, arithmétiques, mémoire…) ;
--   Un interpréteur Python applique des instructions directement écrites dans le langage Python : il transforme à la volée le code au format texte en code binaire exploitable par un microprocesseur.
+-   Un interpréteur Python applique des instructions directement écrites dans le langage Python : il transforme à la volée le code au format texte en code binaire exploitable par un microprocesseur. On parle de **langage interprété**.
 
-Les langages interprétés tels que le C, l'ADA ou le Fortran ne sont pas des langages machine : ils requièrent une phase de compilation pour transformer le code écrit en binaire.
+Les **langages compilés** tels que le C, l'ADA ou le Fortran ne sont pas des langages machine : ils requièrent une phase de compilation pour transformer le code écrit en binaire.
 
-Enfin, il existe des langages qualifiés d'intermédaires tels que Java, Scala. Ceux-ci exploitent une machine virtuelle qui se charge d'exécuter à la volée des instructions en un code machine spécifique en les transformant en langage machine binaire pour le microprocesseur.
+Enfin, il existe des langages dits intermédaires tels que Java, Scala. Ceux-ci exploitent une machine virtuelle qui se charge d'exécuter à la volée des instructions en un code machine spécifique en les transformant en langage machine binaire pour le microprocesseur.
 
 ## Exemple : algorithme de calcul du prix d'une liste de courses
 
