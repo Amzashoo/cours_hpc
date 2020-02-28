@@ -102,8 +102,9 @@ Implémentation d'un algorithme orienté blockchain :
 
 Mesures de performances et mise à l'échelle.
 
-## Conclusions sur le CPU (20 min., moment de cours interactif)
+## Conclusions sur la parallélisation et le CPU (20 min., moment de cours interactif)
 
+-   Besoin d'algorithmes adaptés au contexte de la parallélisation, pas uniquement pour la traduction.
 -   Relativement simple à paralléliser en SIMT, moins en SIMD.
 -   Très versatile.
 -   Rapport FLOPS/W et FLOPS/€.
