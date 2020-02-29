@@ -54,7 +54,7 @@ Pourquoi le parallélisme ? Intéret. Top 500.
 
 Intérêt, loi d'Amhdal.
 
-### TPs dirigés (notés avec rapport + code à rendre sur GitHub)
+### TPs dirigés (notés avec rapport + code à rendre sur un dépôt Git)
 
 On essaiera de faire avancer les TPs autour d'un algorithme qui jouera le rôle de fil conducteur. Idéalement, un algo orienté blockchain tel que du calcul de hash.
 
@@ -109,4 +109,75 @@ Mesures de performances et mise à l'échelle.
 -   Très versatile.
 -   Rapport FLOPS/W et FLOPS/€.
 
-# Architecture GPU
+# Architecture GPU (~9h ?)
+
+## Processeur graphique GPU (1h ? cours)
+
+-   Architecture (multiprocesseurs, warps, threads, blocks, etc.) ;
+-   Types de mémoire (caches, *shared*, *texture*, *global*) ;
+-   Notions de bande passante ;
+-   *Memory bound*/*compute bound* ;
+-   FLOPS, comparaison avec le CPU.
+
+## 
+
+## Programmation sur GPU
+
+### Présentation des outils (1h ? cours)
+
+-   Différentes tentatives de standards de programmation : mentionner OpenACC, OpenCL, CUDA, etc. ;
+-   Différentes manières de programmer sur GPU ;
+-   Recentrer sur CUDA ;
+-   Présentation de CUDA, du *toolkit*, des bibliothèques ;
+
+## TPs dirigés (notés avec rapport, à rendre sur un dépôt Git)
+
+On travaillera avec un exemple d'algorithme un peu complexe et on itérera peu à peu pour converger vers un code performant.
+
+### Premier exemple CUDA (1h ?)
+
+-   Premier test avec Thrust ;
+-   Noyau de calcul de base, accès non coalescents ;
+-   Mauvaise tailles de blocs ;
+-   Mesure des FLOPS et des Go/s.
+
+### 
+
+### 
+
+### Dimensionnement des blocs (1h ?)
+
+-   Introduction au notions de registres et d'*occupancy* ;
+
+-   Amélioration du code précédent en optimisant la taille des blocs pour augmenter l'utilisation du GPU ;
+-   Mesure des FLOPS et des Go/s.
+
+### Accès mémoire coalescents (1h ?)
+
+-   Amélioration des noyaux de calcul en améliorant la coalescence des accès mémoire ;
+-   Mesure des améliorations de performances.
+
+### Exploitation de la mémoire *shared* (3h ?)
+
+-   Fonctionnement de la mémoire *shared*, quotas.
+-   Chiffrage de la bande passante et comparaison avec celle de la mémoire *global*.
+
+1.  Exemple de noyau avec des écritures concurrentes :
+    -   __syncthreads() ;
+    -   Problèmes de performances associés ;
+    -   Exploitation de la mémoire *shared* pour résoudre ce problème.
+2.  Exemple de noyau sans possibilité d'accès coalescents :
+    -   Première solution qui réclame trop de mémoire shared -> baisse de l'utilisation ;
+    -   Deuxième solution où on prend en compte la quantité de mémoire *shared* disponible.
+
+## Présentation des outils de profilage GPU (1h, cours interactif)
+
+-   Démonstration de Nsight ;
+-   Fourniture d'une documentation.
+
+# Travail final à réaliser (noté)
+
+Implémentation sur GPU d'un algorithme orienté blockchain :
+
+-   Objectif : exploiter efficacement le GPU (% de bande passante si *memory bound*, % de GFlops si *compute bound*) ;
+-   Méthodes : au choix, conseil d'utiliation de Nsight.
