@@ -26,7 +26,7 @@ Référence à TIS-100.
 
 L'exemple du TD est dispo sur GitHub, mettre en pratique les implémentations du TD et aller plus loin.
 
-# Architecture CPU (10h ?)
+# Architecture CPU (~10h ?)
 
 ## Processeur généraliste GPP (30 min ?, cours)
 
@@ -109,7 +109,7 @@ Mesures de performances et mise à l'échelle.
 -   Très versatile.
 -   Rapport FLOPS/W et FLOPS/€.
 
-# Architecture GPU (~9h ?)
+# Architecture GPU (~10h ?)
 
 ## Processeur graphique GPU (1h ? cours)
 
@@ -145,21 +145,22 @@ On travaillera avec un exemple d'algorithme un peu complexe et on itérera peu �
 
 ### 
 
-### Dimensionnement des blocs (1h ?)
+### Dimensionnement des blocs (1h30 ?)
 
--   Introduction au notions de registres et d'*occupancy* ;
+-   Introduction au notions de registres et d'*occupancy* (cours 30 min) ;
 -   Amélioration du code précédent en optimisant la taille des blocs pour augmenter l'utilisation du GPU ;
 -   Mesure des FLOPS et des Go/s.
 
-### Accès mémoire coalescents (1h ?)
+### Accès mémoire coalescents (1h30 ?)
 
+-   Principe de la coalescence des accès mémoire (cours 30 min) ;
 -   Amélioration des noyaux de calcul en améliorant la coalescence des accès mémoire ;
 -   Mesure des améliorations de performances.
 
-### Exploitation de la mémoire *shared* (3h ?)
+### Exploitation de la mémoire *shared* (2h30 ?)
 
--   Fonctionnement de la mémoire *shared*, quotas.
--   Chiffrage de la bande passante et comparaison avec celle de la mémoire *global*.
+-   Fonctionnement de la mémoire *shared*, quotas (cours 30 min) ;
+-   Chiffrage de la bande passante et comparaison avec celle de la mémoire *global* ;
 
 1.  Exemple de noyau avec des écritures concurrentes :
     -   __syncthreads() ;
