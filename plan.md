@@ -148,7 +148,6 @@ On travaillera avec un exemple d'algorithme un peu complexe et on itérera peu �
 ### Dimensionnement des blocs (1h ?)
 
 -   Introduction au notions de registres et d'*occupancy* ;
-
 -   Amélioration du code précédent en optimisant la taille des blocs pour augmenter l'utilisation du GPU ;
 -   Mesure des FLOPS et des Go/s.
 
