@@ -40,7 +40,7 @@ Pour permettre l'exécution d'un algorithme, il faut disposer d'un système d'ex
 
 Les **langages compilés** tels que le C, l'ADA ou le Fortran ne sont pas des langages machine : ils requièrent une phase de compilation pour transformer le code écrit en binaire.
 
-Enfin, il existe des langages dits intermédaires tels que Java, Scala. Ceux-ci exploitent une machine virtuelle qui se charge d'exécuter à la volée des instructions en un code machine spécifique en les transformant en langage machine binaire pour le microprocesseur.
+Enfin, il existe des langages dits **intermédaires** tels que Java, Scala ou encore Python dans un autre mode d'utlisation. Ceux-ci exploitent une machine virtuelle qui se charge d'exécuter à la volée des instructions en un code machine spécifique en les transformant en langage machine binaire pour le microprocesseur.
 
 ## Exemple : algorithme de calcul du prix d'une liste de courses
 
