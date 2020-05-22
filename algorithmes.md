@@ -26,7 +26,7 @@ Elles doivent également être rigoureuses et sans ambiguïté :
 
 Enfin, les instructions doivent pouvoir être exécutées en un temps fini par un système adapté.
 
-## implémentation
+## Implémentation
 
 Pour permettre l'exécution d'un algorithme, il faut disposer d'un système d'exécution capable d'interpréter l'algorithme. Pour ce faire, il est nécessaire de traduire l'algorithme dans un langage adapté à ce système, dit **langage machine**. On dit alors qu'on **implémente** l'algorithme.
 
