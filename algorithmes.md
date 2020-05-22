@@ -21,7 +21,7 @@ Les instructions d'un algorithme doivent être **explicites**, de manière à po
 
 Elles doivent également être rigoureuses et sans ambiguïté :
 
--   Avec **a** et **b** deux valeurs booléenes, l'instruction « b := a OU b ET b » est ambigüe ;
+-   Avec **a** et **b** deux valeurs booléenes, l'instruction « **b** := **a** OU **b** ET **b** » est ambigüe ;
 -   L'instruction « assigner à **b** la valeur de la racine carrée de  **a** » n'est pas rigoureuse. Quid du cas où **a** est négatif ?
 
 Enfin, les instructions doivent pouvoir être exécutées en un temps fini par un système adapté.
