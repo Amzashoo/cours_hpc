@@ -75,4 +75,4 @@ double sommer_prix(const std::vector<std::pair<std::string, double>>& articles)
 ```
 
 ## Référence
-Donald E. Knuth, *Algorithmes*, Stanford, CSLI Publications, 2011, 510 p.
+[1] Donald E. Knuth, *Algorithmes*, Stanford, CSLI Publications, 2011, 510 p.
