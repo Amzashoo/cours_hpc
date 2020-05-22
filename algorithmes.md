@@ -1,4 +1,4 @@
-# Algorithmes
+# Algorithmes : notions préliminaires
 
 ## Définition
 
@@ -21,22 +21,26 @@ Les instructions d'un algorithme doivent être **explicites**, de manière à po
 
 Elles doivent également être rigoureuses et sans ambiguïté :
 
--   Avec **a** et **b** deux valeurs booléenes, l'instruction « b = a ou b et b » est ambigüe ;
+-   Avec **a** et **b** deux valeurs booléenes, l'instruction « b := a OU b ET b » est ambigüe ;
 -   L'instruction « assigner à **b** la valeur de la racine carrée de  **a** » n'est pas rigoureuse. Quid du cas où **a** est négatif ?
 
 Enfin, les instructions doivent pouvoir être exécutées en un temps fini par un système adapté.
 
-## Implantation
+## implémentation
 
-Pour permettre l'exécution d'un algorithme, il faut disposer d'un système d'exécution capable d'interpréter l'algorithme. Pour ce faire, il est nécessaire de traduire l'algorithme dans un langage adapté à ce système, dit **langage machine**. On dit alors qu'on **implante** l'algorithme.
+Pour permettre l'exécution d'un algorithme, il faut disposer d'un système d'exécution capable d'interpréter l'algorithme. Pour ce faire, il est nécessaire de traduire l'algorithme dans un langage adapté à ce système, dit **langage machine**. On dit alors qu'on **implémente** l'algorithme.
 
-**Exemples de paires système d'exécution/langage machine :**
+### Exemples de paires système d'exécution/langage machine
 
 -   Le métier Jacquard, inventé en 1801 par Joseph Marie Jacquard, est un des premiers exemples de systèmes programmables. Il exploitait des cartes perforées pour tisser des motifs de tissage complexes ;
 -   Le pianola, instrument de musique capable de reproduire une partition écrite sur deux rouleaux de papier perforés ;
 -   Un joueur de Rubik's Cube peut lire des séries d'instructions représentant des mouvements, par exemple : FRUR'U'F' ;
 -   Un microprocesseur exploite des instructions au format binaire qui correspondent à des opérations élémentaires (logiques, arithmétiques, mémoire…) ;
--   Un interpréteur Python applique des instructions directement écrites dans le langage Python : il transforme à la volée le code au format texte en code binaire exploitable par un microprocesseur. On parle de **langage interprété**.
+-   Un interpréteur Python applique des instructions directement écrites dans le langage Python.
+
+### Différents types de langages
+
+Les langages **interprétés**, tels que Python, Perl ou Ruby prennent la forme d'instructions textuelles fournies à un logiciel en ligne de commandes qui en effectue une traduction à la volée en langage machine directement exploité par le matériel.
 
 Les **langages compilés** tels que le C, l'ADA ou le Fortran ne sont pas des langages machine : ils requièrent une phase de compilation pour transformer le code écrit en binaire.
 
@@ -53,6 +57,22 @@ Enfin, il existe des langages dits **intermédaires** tels que Java, Scala ou en
     2.  Pour chaque article de la liste de courses, ajouter son prix à la valeur **somme** ;
     3.  Renvoyer la valeur de sortie **somme**.
     
-    
 
-[1] Donald E. Knuth, *Algorithmes*, Stanford, CSLI Publications, 2011, 510 p.
+- Implémentation (en C++) :
+```cpp
+double sommer_prix(const std::vector<std::pair<std::string, double>>& articles)
+{
+    double prix_total = 0.;
+
+    for(const auto& article : articles)
+    {
+        const auto prix = article.second;
+        prix_total += prix;
+    }
+
+    return prix_total;
+}
+```
+
+## Référence
+Donald E. Knuth, *Algorithmes*, Stanford, CSLI Publications, 2011, 510 p.
